@@ -67,8 +67,9 @@ td.r,th.r{text-align:right}
 .lock{background:#f1f5f9;border-radius:8px;padding:10px;font-size:13px;color:var(--mute)}
 .demoBanner{background:#ecfdf5;border:1px solid #a7f3d0;border-radius:10px;padding:10px 12px;margin-bottom:14px;font-size:14px;color:#065f46}
 .upsell{background:#fffbeb;border:1px dashed #f59e0b;border-radius:12px;padding:12px;font-size:14px;margin-top:4px}
-.checkoutBtn{display:inline-block;margin-top:10px;background:var(--pri);color:#fff!important;padding:10px 14px;border-radius:8px;font-size:14px;font-weight:600;text-decoration:none}
-.checkoutBtn:hover{background:var(--pri2)}
+.checkoutBtn{position:fixed;right:16px;right:max(16px,env(safe-area-inset-right));bottom:16px;bottom:max(16px,env(safe-area-inset-bottom));z-index:8;display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 18px;border-radius:999px;background:var(--pri);color:#fff!important;font-size:14px;font-weight:700;text-decoration:none;box-shadow:0 4px 12px rgba(28,39,51,.24);transition:background .15s ease,transform .15s ease}
+.checkoutBtn:hover{background:var(--pri2);transform:translateY(-2px)}
+.checkoutBtn:focus-visible{outline:3px solid var(--pri2);outline-offset:3px}
 footer{text-align:center;color:var(--mute);font-size:13px;padding:20px 14px 30px}
 footer a{color:var(--pri);font-weight:600}
 #qrisImg{max-width:100%;max-height:300px;display:block;margin:8px auto;border-radius:8px}
@@ -201,7 +202,7 @@ footer a{color:var(--pri);font-weight:600}
   </div>
   <p class="muted">Isi rekap: ringkasan bulan, penjualan per hari, penjualan per produk, dan detail semua transaksi.</p>
  </div>
- <div class="upsell">🔒 Butuh laporan mingguan &amp; bulanan, grafik penjualan, dan multi-kasir? Upgrade ke <b>Sistem Kasir Lengkap</b> di <a href="#" class="lnk" target="_blank" rel="noopener"></a><br><a class="checkoutBtn" href="http://lynk.id/aburasyad/wge41wgnwwn2" target="_blank" rel="noopener noreferrer">Checkout sekarang</a></div>
+ <div class="upsell">🔒 Butuh laporan mingguan &amp; bulanan, grafik penjualan, dan multi-kasir? Upgrade ke <b>Sistem Kasir Lengkap</b> di <a href="#" class="lnk" target="_blank" rel="noopener"></a></div>
 </section>
 
 <section id="printer" class="tab">
@@ -282,6 +283,7 @@ footer a{color:var(--pri);font-weight:600}
 </main>
 
 <footer id="brandFooter"></footer>
+<a class="checkoutBtn" href="http://lynk.id/aburasyad/wge41wgnwwn2" target="_blank" rel="noopener noreferrer">Checkout sekarang</a>
 <div id="struk"></div>
 <div id="toast"></div>
 
